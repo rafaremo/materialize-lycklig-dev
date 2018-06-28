@@ -3,6 +3,7 @@
 html, body {
   font-family: 'Montserrat', sans-serif;
   color: #666;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -66,10 +67,14 @@ header .cover-image img {
   width: 150px;
 }
 
+section {
+  margin-top: 10px;
+}
+
 h2 {
   text-align: center;
   border-bottom: 2px dotted #333; 
-  padding: 10px 0;
+  padding: 40px 0;
 }
 
 #servicios i.big{
@@ -79,4 +84,10 @@ h2 {
 
 #equipo .miembro .title{
   font-weight: bold
+}
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 2em;
+  }
 }
