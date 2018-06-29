@@ -3,12 +3,20 @@ $(document).ready(function(){
   $('.parallax').parallax();
   $('.inside-text').toggleClass('scale-in');
 
-  $('#contactBtn').click(function(){
+  $('#contactBtn').click(function(e){
+    e.preventDefault();
+
     var nombre = $('#first_name').val();
     var correo = $('#email').val();
     var telefono = $('#phone').val();
+    var empresa = $('#empresa').val();
     var mensaje = $('#textarea1').val();
     var forma = $('#contactForm');
+
+    if(nombre === '' || correo === ''){
+      alert('El nombre y correo son obligatorios');
+      return;
+    }
 
     var person = {
       "fields": [
@@ -23,6 +31,10 @@ $(document).ready(function(){
         {
           "name": "phone",
           "value": telefono
+        },
+        {
+          "name": "company",
+          "value": empresa
         },
         {
           "name": "message",
