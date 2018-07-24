@@ -51,6 +51,21 @@
     gtag('config', 'UA-121636328-1');
   </script>
 
+  <script>
+    dataLayer = [{
+      'pageCategory': 'landing',
+      'visitorType': 'high-value'
+    }];
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5K8WJTD');</script>
+  <!-- End Google Tag Manager -->
+
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -73,10 +88,18 @@
 
   <title>Lycklig Development</title>
 </head>
+
 <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4275092.js"></script>
 <!-- End of HubSpot Embed Code -->
+
 <body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K8WJTD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <header>
       <nav class="white">
         <div class="nav-wrapper container">
@@ -128,10 +151,10 @@
       </div>
       <article class="col s12 m6">
         <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
+          <div class="card-image waves-effect waves-block waves-light" onclick="dataLayer.push({'event': 'programacion'});">
             <img class="activator" src="assets/code.jpg">
           </div>
-          <div class="card-content">
+          <div class="card-content" onclick="dataLayer.push({'event': 'programacion'});">
             <span class="card-title activator grey-text text-darken-4">Programación<i class="material-icons right">more_vert</i></span>
           </div>
           <div class="card-reveal">
@@ -143,10 +166,10 @@
       </article>
       <article class="col s12 m6">
         <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
+          <div class="card-image waves-effect waves-block waves-light" onclick="dataLayer.push({'event': 'optimizacion'});">
             <img class="activator" src="assets/sprint.jpg">
           </div>
-          <div class="card-content">
+          <div class="card-content" onclick="dataLayer.push({'event': 'optimizacion'});">
             <span class="card-title activator grey-text text-darken-4">Optimización<i class="material-icons right">more_vert</i></span>
           </div>
           <div class="card-reveal">
@@ -158,10 +181,10 @@
       </article>
       <article class="col s12 m6">
         <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
+          <div class="card-image waves-effect waves-block waves-light" onclick="dataLayer.push({'event': 'branding'});">
             <img class="activator" src="assets/branding.jpg">
           </div>
-          <div class="card-content">
+          <div class="card-content" onclick="dataLayer.push({'event': 'branding'});">
             <span class="card-title activator grey-text text-darken-4">Branding<i class="material-icons right">more_vert</i></span>
           </div>
           <div class="card-reveal">
@@ -173,10 +196,10 @@
       </article>
       <article class="col s12 m6">
         <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
+          <div class="card-image waves-effect waves-block waves-light" onclick="dataLayer.push({'event': 'foto'});">
             <img class="activator" src="assets/camera.jpg">
           </div>
-          <div class="card-content">
+          <div class="card-content" onclick="dataLayer.push({'event': 'foto'});">
             <span class="card-title activator grey-text text-darken-4">Foto del Producto<i class="material-icons right">more_vert</i></span>
           </div>
           <div class="card-reveal">
@@ -299,7 +322,7 @@
               <textarea id="textarea1" class="materialize-textarea"></textarea>
               <label for="textarea1">Mensaje</label>
             </div>
-            <button class="btn waves-effect waves-light" name="contacto" id="contactBtn">Enviar
+            <button class="btn waves-effect waves-light" name="contacto" id="contactBtn" onclick="dataLayer.push({'event': 'send-form'});">Enviar
               <i class="material-icons right">send</i>
             </button>
           </div>
